@@ -1,0 +1,33 @@
+
+# Matmake file
+# https://github.com/mls-m5/matmake
+
+cppflags += -std=c++14      # c++ only flags
+cflags +=                   # c only flags
+
+# global flags:
+flags += -W -Wall
+
+includes =
+   include
+
+
+lib1.src = lib1/*.cpp
+lib1.out = shared lib1
+
+lib2.src = lib2/*.cpp
+lib2.out = shared lib2
+
+# lib1.link = lib2  # proposed future syntax
+
+
+
+
+## ============= Main target ===============
+
+main.src =
+    src/*.cpp
+
+main.libs = ./lib1.so ./lib2.so 
+
+# main.link = lib1 lib2

@@ -1,0 +1,7 @@
+*.d
+*.o
+lib1.so
+lib2.so
+libcrosstest.*
+main
+*.qtcreator.*
